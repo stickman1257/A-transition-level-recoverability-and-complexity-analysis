@@ -1,0 +1,28 @@
+{
+  "mode": "complexity_stagepair",
+  "stage_dir": "/home/user/Documents/hong/stroke/data/interim",
+  "raw_dir": null,
+  "source_manifest_json": "/home/user/Documents/hong/stroke/data/recoverability_compare_models/gru/suite_manifest.json",
+  "stage_pairs": [
+    "notch->bandpass",
+    "rectified->notch",
+    "lp_10hz->rectified"
+  ],
+  "window_size": 1024,
+  "stride": 512,
+  "complexity_direction": "pre_minus_post",
+  "metrics": {
+    "primary": "pe",
+    "secondary": "sampen",
+    "pe_order": 3,
+    "pe_delay": 1,
+    "pe_max_points": 3000,
+    "sampen_order": 2,
+    "sampen_r_ratio": 0.2,
+    "sampen_max_points": 256
+  },
+  "outputs": {
+    "pair_window_delta_complexity_csv": "/home/user/Documents/hong/stroke/data/complexity_stagepair_suite/pair_window_delta_complexity.csv",
+    "pair_summary_csv": "/home/user/Documents/hong/stroke/data/complexity_stagepair_suite/pair_summary.csv"
+  }
+}

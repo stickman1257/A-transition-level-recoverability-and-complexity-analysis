@@ -1,0 +1,4 @@
+check_name,expected_order,original_mean,mildly_smoothed_mean,strongly_smoothed_mean,passed
+pe_monotonic_reduction,original >= mildly_smoothed >= strongly_smoothed,0.8418288507835734,0.7778131757108329,0.7777616077403499,True
+sampen_monotonic_reduction,original >= mildly_smoothed >= strongly_smoothed,1.2496747236947092,0.8634819694207646,0.7146984877985669,True
+overall,all checks must pass,,,,True

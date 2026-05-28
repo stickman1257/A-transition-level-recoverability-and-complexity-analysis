@@ -1,0 +1,153 @@
+{
+  "model_types": [
+    "conditional_unet",
+    "cnn_1d",
+    "lstm",
+    "gru"
+  ],
+  "stage_pairs": [
+    "notch->bandpass",
+    "rectified->notch",
+    "lp_10hz->rectified"
+  ],
+  "pair_comparisons": [
+    {
+      "stage_pair": "notch->bandpass",
+      "best_model_by_ccc": "conditional_unet",
+      "rows": [
+        {
+          "model_type": "conditional_unet",
+          "ccc": 0.9857052147732703,
+          "pearson_r": 0.9861924519390328,
+          "nrmse": 0.015659719045204763,
+          "psd_distance": 0.10208992999689272,
+          "rms_relative_error": 0.022083225809461374,
+          "median_frequency_relative_error": 0.04158269386262925,
+          "summary_path": "/home/user/Documents/hong/stroke/data/recoverability_suite/notch_to_bandpass/suite_summary.json"
+        },
+        {
+          "model_type": "lstm",
+          "ccc": 0.9853753439989684,
+          "pearson_r": 0.9858660776226067,
+          "nrmse": 0.01570886512799991,
+          "psd_distance": 0.1030311237586177,
+          "rms_relative_error": 0.023142895303654713,
+          "median_frequency_relative_error": 0.03835918115245924,
+          "summary_path": "/home/user/Documents/hong/stroke/data/recoverability_compare_models/lstm/notch_to_bandpass/suite_summary.json"
+        },
+        {
+          "model_type": "gru",
+          "ccc": 0.9852964328077745,
+          "pearson_r": 0.9857455777625103,
+          "nrmse": 0.01582496128474425,
+          "psd_distance": 0.1021543533836571,
+          "rms_relative_error": 0.022133675827585218,
+          "median_frequency_relative_error": 0.0337379303518092,
+          "summary_path": "/home/user/Documents/hong/stroke/data/recoverability_compare_models/gru/notch_to_bandpass/suite_summary.json"
+        },
+        {
+          "model_type": "cnn_1d",
+          "ccc": 0.9847463283301721,
+          "pearson_r": 0.9852704131666551,
+          "nrmse": 0.01615940278993479,
+          "psd_distance": 0.10379325475722986,
+          "rms_relative_error": 0.02214165043973389,
+          "median_frequency_relative_error": 0.041793000541342,
+          "summary_path": "/home/user/Documents/hong/stroke/data/recoverability_compare_models/cnn_1d/notch_to_bandpass/suite_summary.json"
+        }
+      ]
+    },
+    {
+      "stage_pair": "rectified->notch",
+      "best_model_by_ccc": "conditional_unet",
+      "rows": [
+        {
+          "model_type": "conditional_unet",
+          "ccc": 0.00825444741659429,
+          "pearson_r": 0.009559945668367107,
+          "nrmse": 0.1734667309436385,
+          "psd_distance": 2.0100973151939203,
+          "rms_relative_error": 0.6015627583515915,
+          "median_frequency_relative_error": 0.33930940223335637,
+          "summary_path": "/home/user/Documents/hong/stroke/data/recoverability_suite/rectified_to_notch/suite_summary.json"
+        },
+        {
+          "model_type": "cnn_1d",
+          "ccc": 0.004866070817121668,
+          "pearson_r": 0.00664921505396812,
+          "nrmse": 0.16818370355113138,
+          "psd_distance": 2.6408054675758588,
+          "rms_relative_error": 0.6772375996862897,
+          "median_frequency_relative_error": 0.5438594859192246,
+          "summary_path": "/home/user/Documents/hong/stroke/data/recoverability_compare_models/cnn_1d/rectified_to_notch/suite_summary.json"
+        },
+        {
+          "model_type": "gru",
+          "ccc": 0.0032321155019245534,
+          "pearson_r": 0.0071338063489873515,
+          "nrmse": 0.12146256663733403,
+          "psd_distance": 1.3273261057937717,
+          "rms_relative_error": 0.7245945319676712,
+          "median_frequency_relative_error": 0.7699238366810516,
+          "summary_path": "/home/user/Documents/hong/stroke/data/recoverability_compare_models/gru/rectified_to_notch/suite_summary.json"
+        },
+        {
+          "model_type": "lstm",
+          "ccc": 0.0026860822303909604,
+          "pearson_r": 0.004402178855465835,
+          "nrmse": 0.12620362193316118,
+          "psd_distance": 1.2668109096929847,
+          "rms_relative_error": 0.686293481277632,
+          "median_frequency_relative_error": 0.7413125960697318,
+          "summary_path": "/home/user/Documents/hong/stroke/data/recoverability_compare_models/lstm/rectified_to_notch/suite_summary.json"
+        }
+      ]
+    },
+    {
+      "stage_pair": "lp_10hz->rectified",
+      "best_model_by_ccc": "gru",
+      "rows": [
+        {
+          "model_type": "gru",
+          "ccc": 0.5745835532158624,
+          "pearson_r": 0.6309385564753188,
+          "nrmse": 0.11657949528117453,
+          "psd_distance": 0.7633666284084291,
+          "rms_relative_error": 0.20279153090228147,
+          "median_frequency_relative_error": 0.8444837336524555,
+          "summary_path": "/home/user/Documents/hong/stroke/data/recoverability_compare_models/gru/lp_10hz_to_rectified/suite_summary.json"
+        },
+        {
+          "model_type": "lstm",
+          "ccc": 0.5690692719005473,
+          "pearson_r": 0.6248642957237027,
+          "nrmse": 0.1182091528384147,
+          "psd_distance": 0.7798835712494486,
+          "rms_relative_error": 0.2066269958899976,
+          "median_frequency_relative_error": 0.8444502515096193,
+          "summary_path": "/home/user/Documents/hong/stroke/data/recoverability_compare_models/lstm/lp_10hz_to_rectified/suite_summary.json"
+        },
+        {
+          "model_type": "cnn_1d",
+          "ccc": 0.5604481645080684,
+          "pearson_r": 0.6054423164774947,
+          "nrmse": 0.12460636491734679,
+          "psd_distance": 0.9354465619553761,
+          "rms_relative_error": 0.19179098786618323,
+          "median_frequency_relative_error": 0.8433363944207979,
+          "summary_path": "/home/user/Documents/hong/stroke/data/recoverability_compare_models/cnn_1d/lp_10hz_to_rectified/suite_summary.json"
+        },
+        {
+          "model_type": "conditional_unet",
+          "ccc": 0.5584149932973809,
+          "pearson_r": 0.6021277306064793,
+          "nrmse": 0.13400061871986796,
+          "psd_distance": 2.005738973297323,
+          "rms_relative_error": 0.22743639433610457,
+          "median_frequency_relative_error": 0.8407076028228956,
+          "summary_path": "/home/user/Documents/hong/stroke/data/recoverability_suite/lp_10hz_to_rectified/suite_summary.json"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Python 3.10+
+matplotlib
+numpy
+pandas
+pyarrow  # required for pandas parquet I/O
+scikit-learn
+scipy
+torch
+tqdm

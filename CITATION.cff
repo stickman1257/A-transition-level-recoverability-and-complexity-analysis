@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: "Evaluating EMG preprocessing as input representation design for intelligent EMG systems: A transition-level recoverability and complexity analysis"
+message: "If you use this code, please cite the associated manuscript."
+authors:
+  - family-names: Hong
+    given-names: Jeong Min
+  - family-names: Kwon
+    given-names: Seung O
+  - family-names: Kim
+    given-names: Eun Chan
+date-released: 2026-05-28
+repository-code: "https://github.com/stickman1257/A-transition-level-recoverability-and-complexity-analysis"
